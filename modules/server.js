@@ -1,11 +1,13 @@
 var http = require('http');
 var colors = require('colors');
 var handlers = require('./handlers');
+var url = require('url');
 
 function start() {
   function onRequest(request, response) {
     console.log("Odebrano zapytanie.".green);
     console.log("Zapytanie " + request.url + " odebrane.");
+    var parsedUrl = url.parse(request.url, true);
 
     response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
 
