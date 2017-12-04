@@ -11,7 +11,7 @@ function start() {
 
     response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
 
-    switch (request.url) {
+    switch (parsedUrl.pathname) {
         case '/':
         case '/start':
             handlers.welcome(request, response);
@@ -23,7 +23,7 @@ function start() {
             handlers.upload(request, response);
             break;
         case '/show':
-            handlers.show(request, response);
+            handlers.show(request, response, parsedUrl.query.name);
             break;
         default:
             handlers.error(request, response);
