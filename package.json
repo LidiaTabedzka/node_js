@@ -1,0 +1,25 @@
+{
+  "name": "Node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LidiaTabedzka/node_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LidiaTabedzka/node_js/issues"
+  },
+  "homepage": "https://github.com/LidiaTabedzka/node_js#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "formidable": "^1.1.1"
+  }
+}

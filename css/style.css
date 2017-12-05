@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+body {
+    text-align: center;
+    background-color: #94b0dd;
+}
+/*Styles for app header*/
+h1 {
+    margin: 60px;
+    font-family: 'Handlee', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+/*Styles for form fields*/
+label {
+    font-size: 20px;
+}
+input {
+    margin: 10px;
+    padding: 10px;
+}
+input[type = "text"],
+input[type = "file"] {
+    border: 1px solid;
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+input[type = "submit"] {
+    padding: 10px 30px;
+    background-color: #183460;
+    color: white;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+input[type = "submit"]:hover {
+    background-color: #94b0dd;
+    color: black;
+    border: 1px solid;
+    cursor: pointer;
+}
